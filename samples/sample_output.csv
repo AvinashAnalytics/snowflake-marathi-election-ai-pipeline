@@ -1,4 +1,4 @@
-"voter_id","serial_no","full_name_mr","guardian_name_mr","guardian_type","house_no","age","gender","photo_available","deleted_flag","source_file"
-"AIS7740889",32099,"पाटील जशिता हेमंत","पाटील हेमंत","husband","२५७",40,"Female",true,false,"0001-0500.pdf"
-"AIS7740890",32100,"कुमार राजेश विजय","कुमार विजय","father","२५८",35,"Male",true,false,"0001-0500.pdf"
-"AIS7740891",32101,"शर्मा प्रिया अनिल","शर्मा अनिल","father","२५९",28,"Female",true,false,"0001-0500.pdf"
+"record_id","serial_no","name_regional","guardian_name","relation_type","address","age","category","status_flag","source_file"
+"XXX1234567",1,"[Name in Regional Script]","[Guardian Name]","father","[Address]",35,"Category A",true,"document_001.pdf"
+"XXX1234568",2,"[Name in Regional Script]","[Guardian Name]","spouse","[Address]",42,"Category B",true,"document_001.pdf"
+"XXX1234569",3,"[Name in Regional Script]","[Guardian Name]","father","[Address]",28,"Category A",true,"document_001.pdf"
