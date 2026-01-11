@@ -1,12 +1,56 @@
 {
-  "description": "Sample structure of parsed PDF JSON output",
-  "source": "AI_PARSE_DOCUMENT function",
-  "sample_data": {
-    "content": "नागपूर महानगरपालिका\nमूळ प्रारूप मतदार यादी\n\n32099 AIS7740889 53/263/605\nपाटील जशिता हेमंत\nपतीचे नाव: पाटील हेमंत\nघर क्रमांक: २५७\nवय: 40 लिंग: स्त्री\nPhoto Available\n\n32100 AIS7740890 53/263/606\nकुमार राजेश विजय\nवडिलांचे नाव: कुमार विजय\nघर क्रमांक: २५८\nवय: 35 लिंग: पुरुष\nPhoto Available",
-    "metadata": {
-      "page_count": 150,
-      "language": "Marathi",
-      "municipality": "Nagpur"
+  "description": "Sample structure of extracted data (anonymized)",
+  "note": "Actual data is not included for privacy reasons",
+  "schema": {
+    "record_id": {
+      "type": "STRING",
+      "pattern": "XXX0000000",
+      "description": "Unique identifier with prefix + 7 digits"
+    },
+    "serial_no": {
+      "type": "INTEGER",
+      "description": "Sequential record number"
+    },
+    "name_regional": {
+      "type": "STRING",
+      "description": "Name in regional language script"
+    },
+    "guardian_name": {
+      "type": "STRING",
+      "description": "Guardian/parent name"
+    },
+    "relation_type": {
+      "type": "STRING",
+      "enum": ["father", "mother", "spouse", "guardian"],
+      "description": "Relationship to guardian"
+    },
+    "address": {
+      "type": "STRING",
+      "description": "Address information"
+    },
+    "age": {
+      "type": "INTEGER",
+      "range": "18-120",
+      "description": "Age in years"
+    },
+    "category": {
+      "type": "STRING",
+      "description": "Category classification"
+    },
+    "status_flag": {
+      "type": "BOOLEAN",
+      "description": "Active/inactive status"
     }
+  },
+  "sample_record": {
+    "record_id": "XXX1234567",
+    "serial_no": 1,
+    "name_regional": "[Regional Script Name]",
+    "guardian_name": "[Regional Script Name]",
+    "relation_type": "father",
+    "address": "[Address]",
+    "age": 35,
+    "category": "Category A",
+    "status_flag": true
   }
 }
