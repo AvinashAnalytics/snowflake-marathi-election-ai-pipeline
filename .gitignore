@@ -1,0 +1,43 @@
+
+# Snowflake credentials
+*.json
+snowflake_config.py
+credentials/
+
+# Data files (don't commit actual data)
+*.pdf
+*.csv
+*.xlsx
+data/
+exports/
+
+# IDE settings
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Python (if using SnowSQL scripts)
+__pycache__/
+*.py[cod]
+venv/
+.venv/
